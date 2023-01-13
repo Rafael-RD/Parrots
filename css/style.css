@@ -48,11 +48,11 @@ transform-style: preserve-3d;
     width: 80%;
 }
 
-/* .back-face {
+.back-face {
 transform: rotateY(180deg);
 }
 
-.card:hover .back-face {
+/* .card:hover .back-face {
 transform: rotateY(0deg);
 }
  
