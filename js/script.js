@@ -3,13 +3,14 @@ let tempImgFrente='';
 let jogadas=0;
 let idInterval;
 let timer=0;
-const imgFrente=['<img src="img/bobrossparrot.gif" alt="1">',
-'<img src="img/explodyparrot.gif" alt="2">',
-'<img src="img/fiestaparrot.gif" alt="3">',
-'<img src="img/metalparrot.gif" alt="4">',
-'<img src="img/revertitparrot.gif" alt="5">',
-'<img src="img/tripletsparrot.gif" alt="6">',
-'<img src="img/unicornparrot.gif" alt="7">'];
+const imgFrente=[
+'<img data-test="face-up-image" src="img/bobrossparrot.gif" alt="1">',
+'<img data-test="face-up-image" src="img/explodyparrot.gif" alt="2">',
+'<img data-test="face-up-image" src="img/fiestaparrot.gif" alt="3">',
+'<img data-test="face-up-image" src="img/metalparrot.gif" alt="4">',
+'<img data-test="face-up-image" src="img/revertitparrot.gif" alt="5">',
+'<img data-test="face-up-image" src="img/tripletsparrot.gif" alt="6">',
+'<img data-test="face-up-image" src="img/unicornparrot.gif" alt="7">'];
 tempImgFrente=randomizer(imgFrente);
 const contCartas=document.querySelector('.container');
 function criarJogo(){
@@ -26,22 +27,22 @@ function criarJogo(){
 
     for(let i=qtdcartas/2;i>0;i--){
         tempContCartas.push(`
-        <div class="card" onclick="clickCarta(this)">
+        <div data-test="card" class="card" onclick="clickCarta(this)">
             <div class="front-face face virada">
                 ${tempImgFrente[i]}
             </div>
             <div class="back-face face">
-                <img src="img/back.png" alt="Verso">
+                <img data-test="face-down-image" src="img/back.png" alt="Verso">
             </div>
         </div>
     `);
         tempContCartas.push(`
-        <div class="card" onclick="clickCarta(this)">
+        <div data-test="card" class="card" onclick="clickCarta(this)">
             <div class="front-face face virada">
                 ${tempImgFrente[i]}
             </div>
             <div class="back-face face">
-                <img src="img/back.png" alt="Verso">
+                <img data-test="face-down-image" src="img/back.png" alt="Verso">
             </div>
         </div>
     `);
