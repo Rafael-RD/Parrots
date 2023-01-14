@@ -14,6 +14,7 @@ body{
     color: #75B79E;
     text-align: center;
     margin: 40px;
+    padding: inherit 10px;
 }
 
 .container{
@@ -50,4 +51,17 @@ transform-style: preserve-3d;
 
 .virada {
 transform: rotateY(180deg);
+}
+
+.contador{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #86BD8D;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    z-index: 1;
 }
