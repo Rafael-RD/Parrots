@@ -25,7 +25,7 @@ function criarJogo(){
     contCartas.innerHTML='';
     let tempContCartas=[];
 
-    for(let i=qtdcartas/2;i>0;i--){
+    for(let i=0;i<qtdcartas/2;i++){
         tempContCartas.push(`
         <div data-test="card" class="card" onclick="clickCarta(this)">
             <div class="front-face face virada">
